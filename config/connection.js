@@ -2,6 +2,9 @@
 var mysql = require("mysql");
 
 let connection;
+console.log("================");
+console.log(process.env);
+console.log("================");
 if(process.env.JAWSDBURL){
   connection = mysql.createConnection(process.env.JAWSDBURL);
 }else{
